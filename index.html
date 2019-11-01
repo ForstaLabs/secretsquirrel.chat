@@ -1,0 +1,22 @@
+<html>
+    <style>
+        img {
+            max-width: 100vw;
+            max-height: 100vh;
+        }
+    </style>
+    <body>
+        <img src="squirrel-svgrepo-com.svg" />
+    </body>
+</html>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search)
+    const foo = urlParams.get('foo')
+    const bar = urlParams.get('bar')
+
+    if (foo || bar) {
+        const stuff = document.getElementById("stuff")
+        stuff.innerText = `foo='${foo}', bar='${bar}'`
+    }
+</script>
